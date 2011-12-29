@@ -1,0 +1,32 @@
+GIT
+  remote: git://github.com/jgwmaxwell/em-proxy.git
+  revision: 7b77ee4bfc9e021555958778cb01ed9f5216fcd5
+  specs:
+    em-proxy (0.1.6)
+      eventmachine
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    daemons (1.1.5)
+    eventmachine (0.12.10)
+    rack (1.4.0)
+    rack-protection (1.1.4)
+      rack
+    sinatra (1.3.1)
+      rack (~> 1.3, >= 1.3.4)
+      rack-protection (~> 1.1, >= 1.1.2)
+      tilt (~> 1.3, >= 1.3.3)
+    thin (1.3.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
+    tilt (1.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  em-proxy!
+  sinatra
+  thin
