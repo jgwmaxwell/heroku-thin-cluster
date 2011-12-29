@@ -134,11 +134,11 @@ module BalancingProxy
   # Wrapping the proxy server
   #
   module Server
-    def run(host='0.0.0.0', port=9999)
+    def run(host='0.0.0.0')
 
-      puts "Launching proxy at #{host}:#{port}...\n"
+      puts "Launching proxy at #{host}:#{$port}...\n"
 
-      Proxy.start(:host => host, :port => port, :debug => false) do |conn|
+      Proxy.start(:host => host, :port => $port, :debug => false) do |conn|
 
         Backend.select do |backend|
 

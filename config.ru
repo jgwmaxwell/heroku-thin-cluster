@@ -3,6 +3,8 @@ require 'bundler'
 
 Bundler.require(:default)
 
+$port = ARGV.first
+
 require './app'
 require './proxy'
 
