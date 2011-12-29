@@ -5,8 +5,6 @@ require 'em-proxy'
 require 'uri'
 require 'socket'
 
-ROOT = "/home/john/TestRuby/testapp/"
-SERVERS = 4
 # = Balancing Proxy
 #
 # A simple example of a balancing, reverse/forward proxy such as Nginx or HAProxy.
@@ -28,7 +26,7 @@ module BalancingProxy
   extend self
 
   BACKENDS = []
-  0.upto(SERVERS - 1){|i| BACKENDS << {:socket => "#{ROOT}tmp/thin.#{i}.sock"}}
+  0.upto(SERVERS - 1){|i| BACKENDS << {:socket => "#{ROOT}/tmp/thin.#{i}.sock"}}
 
   # Represents a "backend", ie. the endpoint for the proxy.
   #
