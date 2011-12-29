@@ -6,7 +6,7 @@ require 'uri'
 require 'socket'
 
 ROOT = "/home/john/TestRuby/testapp/"
-SERVERS = 5
+SERVERS = 4
 # = Balancing Proxy
 #
 # A simple example of a balancing, reverse/forward proxy such as Nginx or HAProxy.
