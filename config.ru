@@ -14,6 +14,7 @@ require './app'
 #$servers = []
 
 $servers = spawn("bundle exec thin start -R app.rb -s #{SERVERS} --socket #{ROOT}/tmp/thin.sock -e production")
+puts $servers
 while (!$servers)
   redo
 end
