@@ -1,9 +1,7 @@
 require 'sinatra'
 require 'syntaxi'
 
-Mongoid.configure do |config|
-  config.master = Mongo::Connection.new.db(ENV['MONGOLAB_URI'])
-end
+Mongoid.load!("config/mongoid.yml")
 
 class Snippet
   include Mongoid::Document

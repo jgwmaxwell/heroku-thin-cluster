@@ -1,0 +1,2 @@
+production:
+  uri: mongodb://heroku_app2254063:4tjpet4glrtn7k3sq5aiu78fa2@ds029297.mongolab.com:29297/heroku_app2254063
