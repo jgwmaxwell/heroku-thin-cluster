@@ -35,6 +35,11 @@ class App < Sinatra::Base
       erb :new
     end
     
+    #for blitz
+    get '/mu-c9ac6757-c683d474-e22d5a21-e325d9fc' do
+      '42'
+    end
+    
     # create
     post '/' do
       snippet = Snippet.new(:title => params[:snippet_title],
@@ -54,12 +59,6 @@ class App < Sinatra::Base
       else
         redirect '/'
       end
-    end
-    
-    
-    #for blitz
-    get '/mu-c9ac6757-c683d474-e22d5a21-e325d9fc' do
-      '42'
     end
 
 
