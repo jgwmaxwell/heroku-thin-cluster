@@ -5,7 +5,7 @@ Bundler.require(:default)
 
 $port = ARGV.first
 ROOT = File.expand_path(File.dirname(File.dirname(__FILE__)))
-SERVERS = 4
+SERVERS = 3
 
 require './app'
 
