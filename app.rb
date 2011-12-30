@@ -55,6 +55,12 @@ class App < Sinatra::Base
         redirect '/'
       end
     end
+    
+    
+    #for blitz
+    get '/mu-c9ac6757-c683d474-e22d5a21-e325d9fc' do
+      '42'
+    end
 
 
 end
