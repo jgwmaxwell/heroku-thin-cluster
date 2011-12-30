@@ -18,5 +18,5 @@ $servers = spawn("bundle exec thin start -R app.rb -s #{SERVERS} --socket #{ROOT
 require './proxy'
 
 # Start proxy
-sleep 10
+sleep 13
 BalancingProxy::Server.run
