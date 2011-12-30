@@ -19,7 +19,6 @@ class Snippet
 
   Syntaxi.line_number_method = 'floating'
   Syntaxi.wrap_at_column = 80
-  #Syntaxi.wrap_enabled = false
 
   def formatted_body
     replacer = Time.now.strftime('[code-%d]')
@@ -35,11 +34,6 @@ class App < Sinatra::Base
 
     get '/' do
       erb :new
-    end
-    
-    #for blitz
-    get '/mu-c9ac6757-c683d474-e22d5a21-e325d9fc' do
-      '42'
     end
     
     # create
