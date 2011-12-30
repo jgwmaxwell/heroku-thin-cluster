@@ -1,7 +1,9 @@
 require 'sinatra'
 require 'syntaxi'
 require 'mongoid'
+
 Mongoid.load!("config/mongoid.yml")
+Mongoid.logger = nil
 
 class Snippet
   include Mongoid::Document
