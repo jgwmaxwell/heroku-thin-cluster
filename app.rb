@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'syntaxi'
-
+require 'mongoid'
 Mongoid.load!("config/mongoid.yml")
 
 class Snippet
